@@ -129,6 +129,10 @@
   <ItemGroup>
     <ClCompile Include="storm.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mapStud.h" />
+    <ClInclude Include="Student.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
