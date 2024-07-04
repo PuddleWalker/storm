@@ -50,23 +50,19 @@ public:
 								for (auto& ageM : patronymicM.second)
 								{
 									if (ageM.first == age) {
-										cout << num << endl;
 										num++;
 										cout << "  Ф.И.О.: " << ageM.second.surname + " " << ageM.second.name + " " << ageM.second.patronymic << endl;
 										cout << "  Возраст: " << ageM.second.age << endl;
 										cout << "  Номер группы: " << ageM.second.group << endl;
 										cout << "  Курс: " << ageM.second.course << endl << endl;
 									}
-									else cout << "Студенты не найдены" << endl;
 								}
 							}
-							else cout << "Студенты не найдены" << endl;
 						}
 					}
-					else cout << "Студенты не найдены" << endl;
 				}
 			}
-			else cout << "Студенты не найдены" << endl;
 		}
+		if (num < 2) cout << "Студенты не найдены" << endl;
 	}
 };

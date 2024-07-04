@@ -14,11 +14,19 @@ class Student
 	string surname;
 	string patronymic;
 	string age;
+	static bool count;
 public:
 	Student(string name, string surname, string patronymic, string age) : name{ name }, surname{ surname }, patronymic{ patronymic }, age{ age } 
 	{
-		srand(time(NULL));
-		std::cout << rand() % 100 + 1;
+		timer();
+		course = rand() % 6 + 1;
+		group = rand() % 100 + 1;
 	};
 	Student() {};
+	static void timer()
+	{
+		if(count == false) srand(time(NULL));
+		count = true;
+	}
 };
+bool Student::count = false;
